@@ -12,6 +12,8 @@ for i in (0..2)
   Ingredient.create(name: "#{ing}")
 end
 
+cocktail = Cocktail.create(name: "Test-cocktail")
+
 puts "Finished"
 
 

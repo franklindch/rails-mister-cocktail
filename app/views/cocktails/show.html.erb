@@ -1,0 +1,27 @@
+<%= @cocktail.name %>
+
+<div class="container">
+  <div class="row">
+    <% @doses.each do |dose| %>
+    <div class="col-xs-12 col-sm-4">
+<!--       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');"> -->
+        <div class="card-category"><%= dose.ingredient.name %></div>
+        <div class="card-description">
+          <p><%= dose.description %></p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.submit "Add a dose", class: "btn btn-primary" %>
+<% end %>
+
+
+<%= link_to "Retour", cocktails_path, class: "btn btn-primary btn-lg" %>

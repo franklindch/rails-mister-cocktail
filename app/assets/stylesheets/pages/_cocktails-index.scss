@@ -1,0 +1,42 @@
+.container-index {
+  display: flex;
+}
+
+.left-side {
+  background-image: url('https://images.unsplash.com/photo-1507885786541-9201ba5c567c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f450de4a6cf83b4485582d4e930eab95&auto=format&fit=crop&w=675&q=80');
+  background-position: center;
+  width: 50vw;
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  a {
+  flex: 0 0 auto;
+  }
+}
+
+.right-side {
+  width: 50vw;
+  height: 100vh;
+  background-color: #FEFAF7;
+}
+
+.card-name {
+  background-color: #FF3B3E;
+  padding: 30px;
+  margin: 20px auto;
+  text-align: center;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
